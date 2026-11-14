@@ -4,19 +4,15 @@ class Program
 {
     static void Main()
     {
-        // Вводим первое число
         Console.WriteLine("Введите первое число:");
         double a = double.Parse(Console.ReadLine());
 
-        // Вводим знак операции
         Console.WriteLine("Введите операцию (+, -, *, /):");
         string op = Console.ReadLine();
 
-        // Вводим второе число
         Console.WriteLine("Введите второе число:");
         double b = double.Parse(Console.ReadLine());
 
-        // Проверяем, какая операция выбрана
         if (op == "+")
         {
             Console.WriteLine("Результат: " + (a + b));
