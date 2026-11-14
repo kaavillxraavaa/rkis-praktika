@@ -1,1 +1,51 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Вводим первое число
+        Console.WriteLine("Введите первое число:");
+        double a = double.Parse(Console.ReadLine());
+
+        // Вводим знак операции
+        Console.WriteLine("Введите операцию (+, -, *, /):");
+        string op = Console.ReadLine();
+
+        // Вводим второе число
+        Console.WriteLine("Введите второе число:");
+        double b = double.Parse(Console.ReadLine());
+
+        // Проверяем, какая операция выбрана
+        if (op == "+")
+        {
+            Console.WriteLine("Результат: " + (a + b));
+        }
+        else if (op == "-")
+        {
+            Console.WriteLine("Результат: " + (a - b));
+        }
+        else if (op == "*")
+        {
+            Console.WriteLine("Результат: " + (a * b));
+        }
+        else if (op == "/")
+        {
+            if (b == 0)
+            {
+                Console.WriteLine("На ноль делить нельзя!");
+            }
+            else
+            {
+                Console.WriteLine("Результат: " + (a / b));
+            }
+        }
+        else
+        {
+            Console.WriteLine("Такой операции нет!");
+        }
+
+        Console.ReadLine(); // чтобы окно не закрылось сразу
+    }
+}
 
